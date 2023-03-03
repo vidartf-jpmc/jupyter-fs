@@ -20,6 +20,13 @@ aws_access_key_id = "s3_local"
 aws_secret_access_key = "s3_local"
 
 
+def has_docker_env():
+    try: 
+        docker.from_env(version="auto")
+    except Exception:
+        return False
+    return True
+
 def startServer(s3_port=9000):
     ports = {"80/tcp": s3_port}
 
@@ -64,7 +71,6 @@ def startServer(s3_port=9000):
         time.sleep(1)
 
     return container, exitHandler
-
 
 class RootDirUtil:
     def __init__(

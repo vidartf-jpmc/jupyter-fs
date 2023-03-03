@@ -71,6 +71,8 @@ test_requires = [
     "pysmb",
     "pytest",
     "pytest-cov",
+    "pytest-asyncio",
+    "pytest-jupyter[server]",
 ]
 
 dev_requires = test_requires + [
