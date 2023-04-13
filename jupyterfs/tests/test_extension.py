@@ -18,7 +18,6 @@ from jupyterfs.metamanager import MetaManagerHandler, MetaManager
 
 class TestExtension:
     def test_load_jupyter_server_extension(self):
-
         m = MagicMock()
 
         m.web_app.settings = {}
