@@ -94,7 +94,7 @@ with open("README.md", "r") as fh:
 
 setup_args = dict(
     name=name,
-    version="0.4.0alpha0",
+    version="0.4.0alpha1",
     description="A Filesystem-like mult-contents manager backend for Jupyter",
     long_description=long_description,
     long_description_content_type="text/markdown",
